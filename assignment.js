@@ -119,8 +119,8 @@ console.log(addingIntergerNegative);
 
 // PUT YOUR CODE HERE
 let length = firstName.length;
-let firstInitial = firstName.charAt(0);
-let lastInitial = firstName.charAt(2);
+let firstInitial = firstName.charAt(0); // you could use firstName[0]
+let lastInitial = firstName.charAt(2); // you could use firstName[firstName.length - 1]
 let capitalize = firstName.toUpperCase();
 let weirdInitials = firstName.at(-1) + lastName.at(-1);
 
@@ -148,7 +148,12 @@ if (integer > 10) {
 }
 
 console.log(answer7);
-
+// Here you have two conditions. So one if-else statment is fine.
+if(integer > 10){
+    answer7 = true
+}else{
+    answer7 = false
+}
 
 
 // Don't forget your console.logs!
@@ -181,7 +186,7 @@ if (age <= 30) {
 
 // PUT YOUR CODE HERE
 
-let randomNum = Math.floor(Math.random() * 4) + 1; 
+let randomNum = Math.floor(Math.random() * 4) + 1; // you could multiply it by 3: Math.floor(Math.random() * 3) + 1
 
 switch (randomNum) {
   case 1:
